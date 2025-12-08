@@ -36,7 +36,7 @@ int main()
 
     int z{ 200 };
     cout << "变量z的内存地址为" 
-        << (long long) & z
+     << (long long) & z
         << endl;
 
     // sizeof() 获取变量所占用内存大小
