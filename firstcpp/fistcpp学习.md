@@ -33,14 +33,6 @@ sizeof相当于一种运算符，没有性能开销
 <img src="C:\Users\ZX\AppData\Roaming\Typora\typora-user-images\image-20251208011332142.png" alt="image-20251208011332142" style="zoom:50%;" />
 
 
-变量定义语法
-
-类型 变量名{ 初始值 }；
-
-算术运算支持 字面量和变量{ 字面量 代码示例 }
-
-字面量 （ 整数 小数 ）
-
 
 
 
