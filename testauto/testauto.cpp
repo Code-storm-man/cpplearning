@@ -22,11 +22,17 @@ int main()
 	cout << "cex = " << cex << endl;
 
     {
+        // auto 赋初始值等号和大括号是等效的，但是还是统一用大括号
+        // 但对于前面的变量来说只用大括号的形式
         auto a1 = 10;
         auto d1 = 9.;
         auto f1 = 8.f;
         auto acex = cex; // auto 推导常量时会变为普通变量
-
+        const auto c2 = a1;
+		constexpr auto c1 = cex; // constexpr 变量
+        auto a3{ 11.3 };
+        auto a4 = 14LL;
+        auto a5 = (int)d1; // auto支持的强制转换
     }
 
 
