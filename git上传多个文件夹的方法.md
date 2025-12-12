@@ -15,6 +15,11 @@ ssh-keygen -t ed25519 -C "你的邮箱"
 ```c++
 cat ~/.ssh/id_ed25519.pub
 ```
+如果进入了./ssh 文件或者没有进入，请记住从.ssh 文件夹开始就是用 \ 而不是 /
+```c++
+PS C:\ ... \.ssh> cat .\id_rsa.pub  # 这里是.\ 噢
+```
+
 
 3、将上述SSH-Key代码复制到Github的SSH-Key管理中
 
