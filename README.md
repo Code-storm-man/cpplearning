@@ -1,6 +1,8 @@
 # cpplearning
+![](image/readme背景.jpg)
 
 ## 作者：张鑫
+<img src="image/头像.png" width="20%" />
 
 ## 项目内容
 
