@@ -10,7 +10,6 @@
 // 4. 从初始化器推导类型
 // 5. 建议优先使用auto去定义变量
 
-
 #include <iostream>
 using namespace std;
 
