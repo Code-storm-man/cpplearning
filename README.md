@@ -2,7 +2,11 @@
 ![](image/readme背景.jpg)
 
 ## 作者：张鑫
+<<<<<<< HEAD
 <img src="image/头像.png" width="30%" />
+=======
+![](image/头像.png)
+>>>>>>> 18f9888da3c8b65278881b7ad548ef48aca53400
 
 ## 项目内容
 
