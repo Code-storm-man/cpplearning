@@ -27,3 +27,7 @@ balabala...
 
 ## 7、test_string
 这个文件夹里面介绍了string的用法，以及字符串的特性，截断，空串，字符串到数字stoX转换，数字到字符串to_string转换，字符串的拼接、查找、替换等
+
+
+## 8、test_enum
+这个文件夹里面介绍了枚举类型enum的使用
