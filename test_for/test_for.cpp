@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int main()
+int main(int argc,char *argv[],char *env[])
 {
 	for (int i = 0; /* 初始化 */i < 10/* 条件 */; i++ /* 迭代 */)
     {
@@ -27,4 +27,32 @@ int main()
             break;
     }
     cout << endl;
+
+    // 嵌套for，尽量不超过三层
+    for (int i = 0; i < 5; i++)
+    {
+        for (int j = 0; j < 5; j++)
+        {
+            cout << "(" << i << "," << j << ") ";
+
+        }
+        cout << endl;
+	}
+    cout << endl; // endl是回车的意思
+
+    // 无限循环
+    int index{ 0 };
+    for (;;)
+    {
+        if (index > 10)break;
+        cout << "index: " << index << endl;
+        index++;
+    }
+
+    // 打印环境变量
+    for (int i = 0; env[i] != nullptr; i++)
+    {
+        cout << "第" << i << "个环境变量" << endl;
+        cout << env[i] << endl;
+    }
 }
