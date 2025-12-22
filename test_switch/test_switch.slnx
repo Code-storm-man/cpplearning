@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="test_switch.vcxproj" Id="30cba12f-5bb4-4edf-b927-59e487e98c76" />
+</Solution>
