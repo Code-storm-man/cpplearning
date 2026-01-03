@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="iflogic.vcxproj" />
+  <Project Path="iflogic.vcxproj" Id="52157d13-5240-45f5-8106-caa567d2c101" />
 </Solution>
