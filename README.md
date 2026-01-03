@@ -31,3 +31,18 @@ balabala...
 
 ## 8、test_enum
 这个文件夹里面介绍了枚举类型enum的使用
+
+## 9、test_switch
+这个文件夹介绍了switch语句的整型判断和枚举类型判断等方法的使用
+
+## 10、test_main
+这个文件夹介绍了main函数的参数传递(int argc, char *argv[], char *env[])
+
+## 11、test_for 
+这个文件夹里面介绍了for循环的基本使用、嵌套，还包括break和continue的使用，无限循环、环境变量的打印
+
+## 12、test_while
+这个文件夹介绍了while循环的使用，while括号内条件可以使任何表达式，无限循环（占掉一个cpu核）  
+设计了一个可以执行简单shell的程序，介绍了system函数的使用  
+
+
