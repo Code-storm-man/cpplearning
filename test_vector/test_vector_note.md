@@ -125,6 +125,88 @@ f = datas.insert(f+1,333); // 此时f是332的地址
 
 
 
+### vector插入元素的效率--push_back与emplace_back
+
+#### push_back的创建方法
+
+```c++
+vector<string> vs;
+vs.push_back("test");
+```
+
+通过上述的代码可以知道，
+
+push_back的创建方法：
+
+1、"test"转为string对象
+
+2、vs内部分配string对象空间
+
+3、现代方法是通过移动一份string对象存入vs中
+
+#### emplace_back的创建方法
+
+```c++
+vector<string> vs;
+vs.emplace_back("test");
+```
+
+通过上述的代码可以知道，
+
+emplace_back的创建方法：
+
+1、vs内部分配string对象空间
+
+2、直接将string对象创建在vs分配的空间中
+
+
+
+可以通过断点的方法区分这两种创建方法
+
+<img src="./assets/image-20260112000221928.png" alt="image-20260112000221928" style="zoom:50%;" />
+
+在这两个代码运行下一行打个断点，运行后，右键选择==转到反编译==
+
+![image-20260112000542583](./assets/image-20260112000542583.png)
+
+可以从代码量的区别看出，emplace_back插入元素的执行效率更高
+
+
+
+但是，注意
+
+emplace_back和push_back需要插入类元素时
+
+```c++
+vs.push_back(string("test")); // ✔️
+vs.emplace_back("test");      // ✔️
+```
+
+emplace_back写成    emplace_back(*string("test")*);   ❌
+
+```C++
+vs.push_back();      // ❌
+vs.emplace_back();   // ✔️
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
